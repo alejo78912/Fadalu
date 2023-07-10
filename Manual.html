@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta author="Luz Alejandra Alfonso Bermudez">
+    <title>FADALU-Preguntas frecuentes</title>
+    <link rel="stylesheet" href="css\fontello.css">
+    <link rel="stylesheet" href="css\estilos.css">
+    <link rel="stylesheet" href="css\menu.css">
+    <link rel="stylesheet" href="css\blog.css">
+    <link rel="stylesheet" href="css\Banner.css">
+    <link rel="stylesheet" href="css\info.css">
+    <link rel="icon" href="imagenes/Logo.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+
+
+    <style>
+    .menu-container {
+        
+      position: relative;
+      width: 600px;
+      margin: 0 auto;
+      margin-bottom: 10px;
+    }
+
+    .flecha {
+      font-size: 24px;
+    }
+
+    .contenedor-titulo {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .cajon {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background-color: #FDEDEC;
+      transition: max-height 0.3s ease-in-out;
+      max-height: 0;
+      overflow: hidden;
+      z-index: 1;
+    }
+
+    .opcion {
+      padding: 10px;
+      border-bottom: 1px solid #E6B0AA;
+      color: #E6B0AA;
+        font-family: 'News Cycle', sans-serif;
+    }
+
+    .boton {
+      width: 100%;
+      padding: 10px;
+      background-color: #FDEDEC;
+      text-align: center;
+      cursor: pointer;
+    }
+
+    .boton:hover {
+      background-color: #ddd;
+    }
+
+    .cajon-abierto {
+      display: block;
+      max-height: 200px; /* Altura máxima del cajón abierto */
+    }
+
+    .titulo {
+      text-align: center;
+      font-size: 24px;
+      margin-bottom: 20px;
+      color: #E6B0AA;
+        font-family: 'News Cycle', sans-serif;
+    }
+
+    @media screen and (max-width: 600px) {
+      .menu-container {
+        width: 100%;
+      }
+    }
+    </style>
+
+    <script>
+      function toggleCajon(cajonId) {
+      var cajon = document.getElementById(cajonId);
+      cajon.classList.toggle("cajon-abierto");
+    }
+</script>
+
+</head>
+<body>
+    <header>
+        <div class="contenedor">
+            <a href="index.html"><h1 class="icon-home">FADALU</h1></a>
+            <input type="checkbox" id="menu-bar">
+            <label class="icon-menu-outline" for="menu-bar"></label>
+            <nav class="menu">
+                <a href="index.html">Inicio</a>
+      
+                <a href="Productos.html">Productos</a>
+    
+                <a href="Contacto.html">Contacto</a>
+          
+
+
+
+            
+            </nav>
+        </div>
+    </header>
+    <section id="banner">
+            <img src="imagenes/banner.png">
+            <div class="contenedor">
+
+            </div>    
+        </section>
+
+        <section>
+
+            <div class="contenedor-titulo">
+                <h1 class="titulo">Manual</h1>
+
+            </div>         
+
+        <div class="menu-container">
+            <div class="boton" onclick="toggleCajon('cajon1')"><h2 class="titulos">Carrito de compras</h2> <i class="fas fa-arrow-down flecha"></i></div>
+            <div class="cajon" id="cajon1">
+              <div class="opcion"><button class="boton" ><a href="Manual/Carrito.pdf">Manual carrito</a></button></div>
+    
+            </div>
+          </div>
+        
+          <div class="menu-container">
+            <div class="boton" onclick="toggleCajon('cajon2')"><h2>Comunicarse con la tienda</h2 class="titulos"> <i class="fas fa-arrow-down flecha"></i></div>
+            <div class="cajon" id="cajon2">
+              <div class="opcion"><button class="boton" ><a href="Manual/Contacto.pdf">Manual contacto</a></button></div>
+         
+            </div>
+          </div>
+
+          <div class="menu-container">
+            <div class="boton" onclick="toggleCajon('cajon3')"><h2>Busqueda de productos</h2 class="titulos"> <i class="fas fa-arrow-down flecha"></i></div>
+            <div class="cajon" id="cajon3">
+              <div class="opcion"><button class="boton" ><a href="Manual/Busqueda.pdf">Manual busqueda</a></button></div>
+ 
+            </div>
+          </div>
+        
+          <br>
+
+        </section>
+        
+    
+        </div>
+<br>
+
+
+    <section id="info">
+            <h3>#FADALU</h3>
+            <div class="contenedor"></div>
+            <div class="info-pet"></div>
+            <img src="imagenes/logo.png" >
+        </section>
+
+</main>
+<footer>
+    <div class="contenedor">
+       
+            <p class="copy" >FADALU &copy; 2020</p><br>
+            
+            
+            <div class="sociales"><br>
+                <a class="icon-gmail" href="mailto:fadaluaccesorios@gmail.com?subject=Conocer productos y servicios &body=Hola, quiero conocer más acerca de fadalu"></a> <a class ="icon-instagram" href="https://www.instagram.com/fadalu.accesorios/"></a><a class = "icon-facebook" href="https://www.facebook.com/profile.php?id=100070999513778&mibextid=LQQJ4d"></a><a class= " icon-phone"href="tel:+3135624782"></a><a class= " fab fa-tiktok"href="https://www.tiktok.com/@fadaluaccesorios?_t=8dnSSnWZb2j&_r=1"></a>
+              
+
+
+</div>
+</div>
+</footer>
+</body>
+</html>

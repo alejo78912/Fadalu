@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta author="Luz Alejandra Alfonso Bermudez">
+    <title>FADALU-productos</title>
+    <link rel="stylesheet" href="css\fontello.css">
+    <link rel="stylesheet" href="css\estilos.css">
+    <link rel="stylesheet" href="css\menu.css">
+    <link rel="stylesheet" href="css\Banner.css">
+    <link rel="stylesheet" href="css\blog.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <link rel="stylesheet" href="css\info.css">
+    <link rel="icon" href="imagenes/Logo.ico">
+
+
+
+<style>
+
+
+.buscador {
+      display: flex;
+      align-items: center;
+    }
+
+    .buscador input[type="text"] {
+      width: 200px;
+      padding: 8px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .buscador button {
+      margin-left: 8px;
+      padding: 8px 12px;
+      font-size: 16px;
+      background-color: #E6B0AA;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .producto {
+      margin-bottom: 10px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+</style>
+
+</head>
+<body>
+
+
+
+    <header>
+        <div class="contenedor">
+            <a href="index.html"><h1 class="icon-home">FADALU</h1></a>
+            <input type="checkbox" id="menu-bar">
+            <label class="icon-menu-outline" for="menu-bar"></label>
+            <nav class="menu">
+                <a href="index.html">Inicio</a>
+      
+                <a href="Productos.html">Productos</a>
+    
+                <a href="Contacto.html">Contacto</a>
+
+                <div class="buscador">
+                  <input type="text" id="query" placeholder="Buscar">
+                  <button onclick="buscar()">Buscar</button>
+                </div>
+              
+                
+                  
+                
+              
+                
+           
+      
+
+            </input>
+            </nav>
+        </div>
+    </header>
+    <section id="banner">
+            <img src="imagenes/banner.png">
+            <div class="contenedor">
+
+            </div>              
+        </section>
+
+        
+       
+        <div  class="carrito-container">
+          <div class="titulos">
+          <h2 class="fas fa-shopping-cart" >Carrito de compras</h2></div>
+       
+            <button class="boton"  id="enviar-whatsapp">Enviar a WhatsApp</button>
+        
+            <div class="carrito-content"  id="carrito">
+
+              
+            <p>No hay productos en el carrito.</p>
+
+        </div>
+        </section>
+        <center><h2 class="titulos" >Aretes</h2></center>
+        <div id="resultado">
+
+                
+        </div>
+        <section id="blog">
+            <div class="contenedor">
+              
+             
+
+
+                                <article class="producto">
+                                    <center><h2>Aretes de serpiente</h2></center>
+                                    <img src="imagenes/Serpiente.jpg" >
+                                    <center><h1>$18.000</h1></center>
+                                    <button class="agregar-carrito" data-producto="Aretes de serpiente">Agregar al carrito</button>
+
+
+
+                               </article>
+                               
+                               <article class="producto">
+                                <center><h2>Candongas tres nudos</h2></center>
+                                <img src="imagenes/Candongas tres nudos.jpg" >
+                                <center><h1>$17.000</h1></center>
+                                <button class="agregar-carrito" data-producto="Candongas tres nudos">Agregar al carrito</button>
+
+
+
+                            </article>
+
+                                
+                              <article class="producto">
+                                <center><h2>Candogas trenzadas</h2></center>
+                                <img src="imagenes/Trezada.jpg" >
+                                <center><h1>$17.000</h1></center>
+                                <button class="agregar-carrito" data-producto="Candogas trenzadas">Agregar al carrito</button>
+
+
+
+                            </article >
+                            <article class="producto">
+                              <center><h2>Aretes de margarita</h2></center>
+                              <img src="imagenes/aretes margarita.jpg" >
+                              <center><h1>$17.000</h1></center>
+                              <button class="agregar-carrito" data-producto="Aretes de margarita">Agregar al carrito</button>
+
+
+
+                          </article>
+                          <article class="producto">
+                            <center><h2>Candongas de mariposa</h2></center>
+                            <img src="imagenes/Aretes de mariposa.jpg" >
+                            <center><h1>19.000</h1></center>
+                            <button class="agregar-carrito" data-producto="Candogas de mariposa">Agregar al carrito</button>
+
+
+
+                        </article>
+                        <article class="producto">
+                          <center><h2>Aretes de corazón perla</h2></center>
+                          <img src="imagenes/aretes de corazon perla.jpg" >
+                          <center><h1>$16.000</h1></center>
+                          <button class="agregar-carrito" data-producto="Aretes de corazón perla">Agregar al carrito</button>
+
+
+                      </article>
+                      <article class="producto">
+                        <center><h2>Candongas de perlas</h2></center>
+                        <img src="imagenes/candonga de perlas.jpg" >
+                        <center><h1>$17.000</h1></center>
+                        <button class="agregar-carrito" data-producto="Candongas de perlas">Agregar al carrito</button>
+
+
+
+                    </article>
+                    <article class="producto">
+                                    <center><h2>Perlas en rama</h2></center>
+                                    <img src="imagenes/Perlas en rama.jpg" >
+                                    <center><h1>$18.000</h1></center>
+                                    <button class="agregar-carrito" data-producto="Perlas en ram">Agregar al carrito</button>
+
+
+
+                                </article>
+
+              </div>
+
+            
+            </section>
+                              <center><h2 class="titulos">Earcuff</h2></center>
+
+                              <section id="blog">
+                                <div class="contenedor">
+
+
+                                  
+                                <article class="producto">
+                                  <center><h2>Earcuff de hoja</h2></center>
+                                  <img src="imagenes/Earcuff de hoja.jpg" >
+                                  <center><h1>$13.000</h1></center>
+                                  <button class="agregar-carrito" data-producto="Earcuff de hoja">Agregar al carrito</button>
+
+
+
+                             </article>
+                             
+                             
+                      <article class="producto">
+                        <center><h2>Earcuff de estrella</h2></center>
+                        <img src="imagenes/Earcuff de estrella.jpg" >
+                        <center><h1>Earcuff de estrella</h1></center>
+                        <button class="agregar-carrito" data-producto="Earcuff de estrella">Agregar al carrito</button>
+
+
+
+                    </article>
+                    <article class="producto">
+                      <center><h2>Earcuff cristales</h2></center>
+                      <img src="imagenes/Earcuff cristales.jpg" >
+                      <center><h1>$10.000</h1></center>
+                      <button class="agregar-carrito" data-producto="Earcuff cristales">Agregar al carrito</button>
+
+
+
+                  </article>
+                  <article class="producto">
+                                  <center><h2>Earcuff de rayo</h2></center>
+                                  <img src="imagenes/Earcuff rayo.jpg" >
+                                  <center><h1>$10.000</h1></center>
+                                  <button class="agregar-carrito" data-producto="Earcuff de rayo">Agregar al carrito</button>
+
+
+
+                              </article>
+
+                                </div>
+                              </section>
+
+                                <center><h2 class ="titulos">Anillos</h2></center>
+
+                                <section id="blog">
+                                  <div class="contenedor">
+
+                                                         
+                               
+                  <article class="producto">
+                                  <center><h2>Anillo de perlas</h2></center>
+                                  <img src="imagenes/Anillo_de_perlas.jpg" >
+                                  <center><h2>$15.000</h2></center>
+                                  <button class="agregar-carrito" data-producto="Anillo de perlas">Agregar al carrito</button>
+
+
+
+                              </article>
+
+                              <article class="producto">
+                                <center><h2>Anillo doble cadena</h2></center>
+                                <img src="imagenes/Anillo doble cadena.jpg" >
+                                <center><h1>$16.000</h1></center>
+                                <button class="agregar-carrito" data-producto="Anillo doble cadena">Agregar al carrito</button>
+      
+      
+      
+                            </article>
+                            <article class="producto">
+                              <center><h2>Anillo de corazón</h2></center>
+                              <img src="imagenes/Corazón.jpg" >
+                              <center><h1>$15.000</h1></center>
+                              <button class="agregar-carrito" data-producto="Anillo de corazón">Agregar al carrito</button>
+      
+      
+      
+                          </article>
+                          <article class="producto">
+                            <center><h2>Anillo de corona</h2></center>
+                            <img src="imagenes/Corona.jpg" >
+                            <center><h1>$18.000</h1></center>
+                            <button class="agregar-carrito" data-producto="Anillo de corona">Agregar al carrito</button>
+      
+      
+      
+                        </article>
+                        <article class="producto">
+                                        <center><h2>Anillo de rama plateada</h2></center>
+                                        <img src="imagenes/Rama plateada.jpg" >
+                                        <center><h1>$17.000</h1></center>
+                                        <button class="agregar-carrito" data-producto="Anillo de rama plateada">Agregar al carrito</button>
+      
+      
+      
+                                    </article>
+
+                                </div>
+                              </section>
+
+                              <center><h2 class="titulos">Cadenas</h2></center>
+
+                              <section id="blog">
+                                <div class="contenedor">
+
+                                                       
+                              
+                    <article class="producto">
+                      <center><h2>Hilo corazón</h2></center>
+                      <img src="imagenes/hilo corazon.jpg" >
+                      <center><h1>$8.000</h1></center>
+                      <button class="agregar-carrito" data-producto="Hilo corazón">Agregar al carrito</button>
+
+
+
+                  </article>
+                  <article class="producto">
+                    <center><h2>Hilo estrella</h2></center>
+                    <img src="imagenes/hilo estrella.jpg" >
+                    <center><h1>$8.000</h1></center>
+                    <button class="agregar-carrito" data-producto="Hilo estrella">Agregar al carrito</button>
+
+
+
+                </article>
+                <article class="producto">
+                                <center><h2>Cadena eslabón</h2></center>
+                                <img src="imagenes/cadena eslabon.jpg" >
+                                <center><h1>$14.000</h1></center>
+                                <button class="agregar-carrito" data-producto="Cadena eslabón">Agregar al carrito</button>
+
+
+
+                            </article>
+
+                            <article class="producto">
+                              <center><h2>Choker mariposa</h2></center>
+                              <img src="imagenes/choker mariposa.jpg" >
+                              <center><h1>$15.000</h1></center>
+                              <button class="agregar-carrito" data-producto="Aretes de serpiente">Agregar al carrito</button>
+    
+    
+    
+                          </article>
+                          <article class="producto">
+                            <center><h2>Choker corazón</h2></center>
+                            <img src="imagenes/choker corazon.jpg" >
+                            <center><h1>$17.000</h1></center>
+                            <button class="agregar-carrito" data-producto="Choker corazón">Agregar al carrito</button>
+    
+    
+    
+                        </article>
+                        <article class="producto">
+                          <center><h2>Cadena mamá dorada</h2></center>
+                          <img src="imagenes/cadena mama dorada.jpg" >
+                          <center><h1>$15.000</h1></center>
+                          <button class="agregar-carrito" data-producto="Cadena mamá dorada">Agregar al carrito</button>
+    
+    
+    
+                      </article>
+                      <article class="producto">
+                                      <center><h2>Cadena mamá medallón</h2></center>
+                                      <img src="imagenes/cadena mama medallon.jpg" >
+                                      <button class="agregar-carrito" data-producto="Cadena mamá medallón">Agregar al carrito</button>
+    
+    
+    
+                                  </article>
+
+                              </div>
+                            </section>
+
+                            <center><h2 class="titulos">Pulseras</h2></center>
+
+                            <section id="blog">
+                              <div class="contenedor">
+
+                                                     
+                           
+                          
+                        <article class="producto">
+                          <center><h2>Pulsera de eslabones morados</h2></center>
+                          <img src="imagenes/Pulsera de eslabones morados.jpg" >
+                          <center><h1>$13.000</h1></center>
+                          <button class="agregar-carrito" data-producto="Pulsera de eslabones morados">Agregar al carrito</button>
+
+
+
+                      </article>
+                      <article class="producto">
+                        <center><h2>Pulsera eslabón</h2></center>
+                        <img src="imagenes/Pulsera de eslabon.jpg" >                       
+                        <center><h1>$15.000</h1></center>
+                        <button class="agregar-carrito" data-producto="Pulsera eslabón">Agregar al carrito</button>
+
+
+
+                    </article>
+
+                    
+     
+
+                            </div>
+                          </section>
+
+                          <center><h2 class="titulos">Otros</h2></center>
+                          <section id="blog">
+                            <div class="contenedor">
+
+                              <article class="producto">
+                                <center><h2>Sujeta gafas</h2></center>
+                                <img src="imagenes/porta gafas.jpeg" >
+                                <center><h1>$13.000</h1></center>
+                                <button class="agregar-carrito" data-producto="Sujeta gafas">Agregar al carrito</button>
+        
+        
+        
+                            </article>
+        
+                              
+                            </div>
+                          </section>
+                        </div>  
+  
+  
+                  
+             
+
+                
+              
+
+     <!-- Script -->
+                <script>
+  var carrito = [];
+
+// Función para agregar productos al carrito
+function agregarAlCarrito(producto) {
+  carrito.push(producto);
+  actualizarCarrito();
+}
+
+// Función para eliminar un producto del carrito
+function eliminarDelCarrito(index) {
+  carrito.splice(index, 1);
+  actualizarCarrito();
+}
+
+// Función para actualizar el carrito de compras
+function actualizarCarrito() {
+  var carritoHTML = document.getElementById("carrito");
+  carritoHTML.innerHTML = "";
+
+  if (carrito.length === 0) {
+    carritoHTML.innerHTML = "<p>No hay productos en el carrito.</p>";
+  } else {
+    var listaHTML = document.createElement("ul");
+    carritoHTML.appendChild(listaHTML);
+
+    for (var i = 0; i < carrito.length; i++) {
+      var productoHTML = document.createElement("li");
+      productoHTML.textContent = carrito[i];
+
+      var eliminarHTML = document.createElement("span");
+      eliminarHTML.className = "eliminar-producto";
+      eliminarHTML.textContent = "Eliminar";
+      eliminarHTML.setAttribute("data-index", i);
+      eliminarHTML.addEventListener("click", function() {
+        var index = parseInt(this.getAttribute("data-index"));
+        eliminarDelCarrito(index);
+      });
+
+      productoHTML.appendChild(eliminarHTML);
+      listaHTML.appendChild(productoHTML);
+    }
+  }
+}
+
+// Función para enviar el carrito a WhatsApp
+function enviarWhatsApp() {
+  var mensaje = "¡Hola! Estos son los productos que quiero comprar: " + carrito.join(", ");
+  var numeroWhatsApp = "3135624782";
+  var enlaceWhatsApp = "https://wa.me/" + numeroWhatsApp + "?text=" + encodeURIComponent(mensaje);
+
+  window.open(enlaceWhatsApp);
+}
+
+// Event listener para el botón "Enviar a WhatsApp"
+document.getElementById("enviar-whatsapp").addEventListener("click", enviarWhatsApp);
+
+// Ejemplo de uso: Agregar un producto al carrito
+var botonesAgregarCarrito = document.querySelectorAll(".agregar-carrito");
+botonesAgregarCarrito.forEach(function(boton) {
+  boton.addEventListener("click", function() {
+    var producto = this.getAttribute("data-producto");
+    agregarAlCarrito(producto);
+  });
+});         
+
+</script>
+                                        
+<script>
+   function buscar() {
+      var query = document.getElementById("query").value.toLowerCase();
+      var productos = document.querySelectorAll(".producto");
+
+      productos.forEach(function(producto) {
+        var titulo = producto.querySelector("h2").textContent.toLowerCase();
+
+        if (titulo.includes(query)) {
+          producto.style.display = "block";
+        } else {
+          producto.style.display = "none";
+        }
+      });
+    }
+    
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+</script>        
+
+   
+   
+         
+  
+<br><br>
+
+
+    <section id="info">
+        <h3>#FADALU</h3>
+        <div class="contenedor"></div>
+        <div class="info-pet"></div>
+        <img src="imagenes/logo.png" >
+    </section>
+    
+    </main>
+    <footer>
+        <div class="contenedor">
+            
+                <p class="copy" >FADALU &copy; 2020</p><br>
+                
+                
+                <div class="sociales"><br>
+                  <a class="icon-gmail" href="mailto:fadaluaccesorios@gmail.com?subject=Conocer productos y servicios &body=Hola, quiero conocer más acerca de fadalu"></a> <a class ="icon-instagram" href="https://www.instagram.com/fadalu.accesorios/"></a><a class = "icon-facebook" href="https://www.facebook.com/profile.php?id=100070999513778&mibextid=LQQJ4d"></a><a class= " icon-phone"href="tel:+3135624782"></a><a class= " fab fa-tiktok"href="https://www.tiktok.com/@fadaluaccesorios?_t=8dnSSnWZb2j&_r=1"></a>
+              
+
+    </div>
+    </div>
+    </footer>
+
+
+    
+</body>
+</html>

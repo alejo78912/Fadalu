@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta author="Luz Alejandra Alfonso Bermudez">
+    <title>FADALU-accesorios</title>
+    <link rel="stylesheet" href="css\fontello.css">
+    <link rel="stylesheet" href="css\estilos.css">
+    <link rel="stylesheet" href="css\menu.css">
+    <link rel="stylesheet" href="css\Banner.css">
+    <link rel="stylesheet" href="css\blog.css">
+    <link rel="stylesheet" href="css\info.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <link rel="icon" href="imagenes/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+
+
+    <style>
+        .container {
+      display: flex;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      -webkit-overflow-scrolling: touch;
+      scroll-behavior: smooth;
+      scroll-padding: 10px;
+      align-items: center;
+      height: auto;
+    }
+
+    .imagen {
+      flex-shrink: 0;
+      width: 400px;
+      height: 400px;
+      background-size: cover;
+      transition: background-image 0.3s ease-in-out;
+      cursor: pointer;
+      margin: 0 10px;
+      scroll-snap-align: center;
+    }
+
+    .imagen:hover {
+      background-position: center;
+      background-size: cover;
+    }
+
+    .arrow {
+      position: fixed;
+      top: 50%;
+      width: 40px;
+      height: 40px;
+      background-color: #f0f0f0;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      z-index: 1;
+    }
+
+    .arrow:hover {
+      background-color: #ccc;
+    }
+
+    @media screen and (min-width: 768px) {
+      .container {
+        justify-content: center;
+      }
+    }
+
+    @media screen and (max-width: 767px) {
+      .container {
+        justify-content: flex-start;
+      }
+    }
+      </style>
+
+</head>
+<body>
+    <header>
+        <div class="contenedor">
+           <a href="index.html"><h1 class="icon-home">FADALU</h1></a>
+            <input type="checkbox" id="menu-bar">
+        
+            <label class="icon-menu-outline"  for="menu-bar"></label>
+
+            <nav class="menu">
+                <a href="index.html">Inicio</a>
+      
+                <a href="Productos.html">Productos</a>
+    
+                <a href="Contacto.html">Contacto</a>
+           
+
+
+
+                </nav>
+            </div>
+        </header>
+    <main>
+        <section id="banner">
+            <img src="imagenes/banner.png">
+            <div class="contenedor">
+            </section> 
+            </div>              
+             <section id="bienvenidos">
+                 <h2>BIENVENIDOS A FADALU</h2>
+                 <p>En esta página encontrarás una selección de los accesorios más destacados y de alta calidad.</p>
+                <br>
+                 <div class="video-container">
+                                    
+                  <video src="video/IMG_0.mp4" autoplay muted loop></video>
+
+
+                 
+                 
+                  
+            </div>
+            <br>
+
+            <center> <h2 class="titulos">#FADALU</h2>
+              <p class="copy" >FADALU &copy; 2020</p><br></center>
+
+     
+     
+    </section> 
+
+              
+
+
+    <section>
+      
+
+            <script>
+
+
+function scrollToLeft() {
+      document.getElementById("container").scrollBy({
+        left: -350,
+        behavior: "smooth"
+      });
+    }
+
+    function scrollToRight() {
+      document.getElementById("container").scrollBy({
+        left: 350,
+        behavior: "smooth"
+      });
+    }
+
+              window.addEventListener('DOMContentLoaded', function() {
+      var imagen1 = document.getElementById('imagen1');
+      var imagen2 = document.getElementById('imagen2');
+      var imagen3 = document.getElementById('imagen3');
+      
+      imagen1.style.backgroundImage = "url('imagenes/catalogo7.jpeg')";
+      imagen2.style.backgroundImage = "url('imagenes/catalogo8.jpeg')";
+      imagen3.style.backgroundImage = "url('imagenes/catalogo9.jpeg')";
+    });
+    
+    function cambiarImagen(divId, nuevaImagen) {
+      var div = document.getElementById(divId);
+      div.style.backgroundImage = "url('" + nuevaImagen + "')";
+             }
+
+              </script>
+
+         <center> <h2 class="titulos">Objetivos de interes</h2></center>
+         <div class="arrow" onclick="scrollToLeft()">&lt;</div>
+        
+                <div class="container" id="container">
+
+                  
+                  
+
+                    <a href="Preguntas precuentes.html">
+                      <div class="imagen" id="imagen1" onmouseover='cambiarImagen("imagen1", "imagenes/catalogo.jpeg")' onmouseout='cambiarImagen("imagen1", "imagenes/catalogo2.jpg")'><center><h2 class="titulos"><u><b>Preguntas frecuentes</b></u></h2></center></div>
+                    </a>
+                
+                    <a href="https://drive.google.com/file/d/1DABLfm_O4hRMsDvRH97RKFdBai8veSiV/view">
+                      <div class="imagen" id="imagen2" onmouseover='cambiarImagen("imagen2", "imagenes/catalogo3.jpeg")' onmouseout='cambiarImagen("imagen2", "imagenes/catalogo4.jpeg")'><center><h2 class="titulos"><u><b>Catálogo</b></u></h2></center></div>
+                    </a>
+                
+                    <a href="Manual.html">
+                      <div class="imagen" id="imagen3" onmouseover='cambiarImagen("imagen3", "imagenes/catalogo5.jpeg")' onmouseout='cambiarImagen("imagen3", "imagenes/catalogo6.jpeg")'><center><h2 class="titulos"><u><b>Manual uso de la página</b></u></h2></center></div>
+                    </a>
+                  
+            </div>
+          
+            <div class="arrow" onclick="scrollToRight()">&gt;</div>
+            <center> <h2 class="titulos">#FADALU</h2>
+            <p class="copy" >FADALU &copy; 2020</p><br></center>
+        </section>
+           
+                            <section id="info">
+                                <h3>#FADALU</h3>
+                                <div class="contenedor"></div>
+                                <div class="info-pet"></div>
+                                <img src="imagenes/logo.png" >
+                            </section>
+                
+    </main>
+            <footer>
+                <div class="contenedor">
+                    <p class="copy" >FADALU &copy; 2020</p><br>
+                    
+                    
+                    <div class="sociales"><br>
+                        <a class="icon-gmail" href="mailto:fadaluaccesorios@gmail.com?subject=Conocer productos y servicios &body=Hola, quiero conocer más acerca de fadalu"></a> <a class ="icon-instagram" href="https://www.instagram.com/fadalu.accesorios/"></a><a class = "icon-facebook" href="https://www.facebook.com/profile.php?id=100070999513778&mibextid=LQQJ4d"></a><a class= " icon-phone"href="tel:+3135624782"></a><a class= " fab fa-tiktok"href="https://www.tiktok.com/@fadaluaccesorios?_t=8dnSSnWZb2j&_r=1"></a>
+              
+                  
+
+                    </div>
+                </div>
+            </footer>
+</body>
+</html>

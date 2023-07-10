@@ -1,0 +1,30 @@
+#info {
+    background: #FDEDEC;
+    color: #E6B0AA;
+    text-align: center;
+    padding: 20px;
+   
+}
+#info .contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#info .info-pet {
+    margin: 20px;
+    
+}
+
+  
+  #info a{
+    display: inline-block;
+    margin-right: 10px; /* Ajusta el espaciado entre los enlaces si es necesario */
+  }
+
+#info img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 17px solid #E6B0AA;
+}
