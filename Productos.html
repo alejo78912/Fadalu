@@ -17,7 +17,23 @@
     <link rel="stylesheet" href="css\info.css">
     <link rel="icon" href="imagenes/logo.png">
 
-
+<style>
+    #texto {
+      font-size: 24px;
+      animation: cambioColor 5s infinite;
+    }
+    
+    @keyframes cambioColor {
+      0% { color: red; }
+      14% { color: orange; }
+      28% { color: yellow; }
+      42% { color: green; }
+      57% { color: blue; }
+      71% { color: indigo; }
+      85% { color: violet; }
+      100% { color: red; }
+    }
+  </style>
 
 <style>
 
@@ -172,7 +188,7 @@
                         <article class="producto">
                           <center><h2>Aretes de corazón perla</h2></center>
                           <img src="imagenes/Aretes de corazón y perlas.jpg" >
-                          <center><h1>$16.000</h1></center>
+                          <center><h1>$16.000</h1></center><center><h1 id="texto"¡NUEVO PRODUCTO!</h1><input type="color" id="colorPicker"></center>
                           <button class="agregar-carrito" data-producto="Aretes de corazón perla">Agregar al carrito</button>
 
 
@@ -632,14 +648,7 @@ botonesAgregarCarrito.forEach(function(boton) {
       document.body.appendChild(botonSeguir);
     };
 
-     var texto = document.getElementById("texto");
-    var colorPicker = document.getElementById("colorPicker");
-
-    // Escuchar el evento de cambio de color
-    colorPicker.addEventListener("change", function() {
-      var color = colorPicker.value;
-      texto.style.color = color;
-    });
+  
 
     
   </script>
