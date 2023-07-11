@@ -606,6 +606,23 @@ botonesAgregarCarrito.forEach(function(boton) {
         }
       });
     }
+     window.onload = function() {
+      // Mostrar mensaje de advertencia al cargar la página
+      var mensaje = "Esta página puede contener contenido inapropiado. ¿Desea continuar?";
+      alert(mensaje);
+
+      // Crear botón "Seguir"
+      var botonSeguir = document.createElement("button");
+      botonSeguir.textContent = "Seguir";
+      botonSeguir.onclick = function() {
+        // Ocultar el mensaje y el botón al hacer clic en "Seguir"
+        document.body.removeChild(mensajeAlerta);
+        document.body.removeChild(botonSeguir);
+      };
+
+      // Agregar el botón a la página
+      document.body.appendChild(botonSeguir);
+    };
     
   </script>
 </body>
