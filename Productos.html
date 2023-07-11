@@ -623,6 +623,16 @@ botonesAgregarCarrito.forEach(function(boton) {
       // Agregar el botón a la página
       document.body.appendChild(botonSeguir);
     };
+
+     var texto = document.getElementById("texto");
+    var colorPicker = document.getElementById("colorPicker");
+
+    // Escuchar el evento de cambio de color
+    colorPicker.addEventListener("change", function() {
+      var color = colorPicker.value;
+      texto.style.color = color;
+    });
+
     
   </script>
 </body>
