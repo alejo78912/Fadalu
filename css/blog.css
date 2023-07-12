@@ -139,22 +139,6 @@
     display: inline-block;
   }
 
-.carrito-content {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 200px;
-  padding: 10px;
-  background-color: #FDEDEC;
-  color: #E6B0AA;
-  text-align: left;
-  z-index: 999;
-}
-
-.carrito-container.open .carrito-content {
-  display: block;
-}
   
   .carrito-container .carrito-content {
     display: none;
