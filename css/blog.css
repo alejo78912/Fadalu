@@ -6,11 +6,15 @@
 
 }
 
+
+
 #blog article {
     margin: 30px;
     color: #E6B0AA;
     width: 50%;
     margin-bottom: 30px;
+    position: relative;
+  display: inline-block;
 
 }
 
