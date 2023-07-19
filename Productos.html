@@ -137,12 +137,12 @@
             <p>No hay productos en el carrito.</p>
 
         </div>
+        </section>
+        <center><h2 class="titulos" >Aretes</h2></center>
         <div id="resultado">
 
                 
         </div>
-        <center><h2 class="titulos" >Aretes</h2></center>
-       
         <section id="blog">
             <div class="contenedor">
               
@@ -639,6 +639,7 @@ botonesAgregarCarrito.forEach(function(boton) {
 </script>
                                         
 <script>
+<script>
    function buscar() {
       var query = document.getElementById("query").value.toLowerCase();
       var productos = document.querySelectorAll(".producto");
@@ -653,25 +654,22 @@ botonesAgregarCarrito.forEach(function(boton) {
         }
       });
     }
+    
+  </script>
+
+
+    <script>
      window.onload = function() {
       // Mostrar mensaje de advertencia al cargar la página
       var mensaje = "El día de hoy contamos con nuevos productos.";
       alert(mensaje);
+     }
 
-      // Crear botón "Seguir"
-      var botonSeguir = document.createElement("button");
-      botonSeguir.textContent = "Seguir";
-      botonSeguir.onclick = function() {
-        // Ocultar el mensaje y el botón al hacer clic en "Seguir"
-        document.body.removeChild(mensajeAlerta);
-        document.body.removeChild(botonSeguir);
-      };
-
-
+         </script>
   
 
     
-  </script>
+
 </body>
 </html>
 
