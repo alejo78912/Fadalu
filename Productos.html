@@ -18,16 +18,7 @@
     <link rel="icon" href="imagenes/logo.png">
 
 
-     <script>
-        document.getElementById("anuncioButton").addEventListener("click", function() {
-            var cadenaPrecio = 17000;
-            var pulseraPrecio = 12000;
-            var precioJuntas = 27000;
-
-            var mensaje = "El set de cadena y pulsera se puede vender por separado, la cadena vale $" + cadenaPrecio + " y la pulsera $" + pulseraPrecio + " y juntas valen $" + precioJuntas;
-            alert(mensaje);
-        });
-    </script>
+   
 
 <style>
   #texto {
@@ -534,9 +525,8 @@
                                 <center><h2>Cadena de perlas y pulsera completa</h2></center>
                                 <img src="imagenes/158.jpg" >
                                 <center><h1 id="texto">¡NUEVO PRODUCTO!</h1></center><br>
-                                <center><h1>$26000</h1></center><br>
+                                <center><h1>$26.000</h1></center><br>
                                 <button id="anuncioButton" class="agregar-carrito" data-producto="Cadena de perlas completa">Agregar al carrito</button>
-
 
 
                             </article>
@@ -752,6 +742,18 @@ botonesAgregarCarrito.forEach(function(boton) {
      }
 
          </script>
+
+
+      <script>
+        document.getElementById("anuncioButton").addEventListener("click", function() {
+            var cadenaPrecio = 17000;
+            var pulseraPrecio = 12000;
+            var precioJuntas = 27000;
+
+            var mensaje = "El set de cadena y pulsera se puede vender por separado, la cadena vale $" + cadenaPrecio + " y la pulsera $" + pulseraPrecio + " y juntas valen $" + precioJuntas;
+            alert(mensaje);
+        });
+    </script>
   
 
     
